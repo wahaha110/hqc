@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+<script language="JavaScript">
+　　var i = 1;
+　　banner1= new Image();
+　　banner1.src = "1.jpg";
+　　banner2 = new Image();
+　　banner2.src = "2.jpg";
+　　banner3 = new Image();
+　　banner3.src = "3.jpg";
+　　function startTime(){
+　　var time= new Date();
+　　hours= time.getHours();
+　　mins= time.getMinutes();
+　　secs= time.getSeconds();
+　　closeTime=hours*3600+mins*60+secs;
+　　closeTime+=1;
+　　Timer();
+　　}
+　　function Timer(){
+　　var time= new Date();
+　　hours= time.getHours();
+　　mins= time.getMinutes();
+　　secs= time.getSeconds();
+　　curTime=hours*3600+mins*60+secs
+　　if (curTime>=closeTime){
+　　if (i<3){ // 图形总数
+　　i++;
+　　document.banner.src = eval("banner"+i+".src");
+　　}
+　　else {
+　　i = 1;
+　　document.banner.src = eval("banner"+i+".src");
+　　}
+　　startTime();
+　　}
+　　else{
+　　window.setTimeout("Timer()",1000)}
+　　}
+　　</script>
+</head>
+<body onLoad=" startTime();">
+<center><img src="1.jpg" border=0 name="banner"></center>
+</body>
+</html>

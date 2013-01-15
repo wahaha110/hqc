@@ -1,0 +1,40 @@
+*{ margin: 0; padding: 0; }* 
+body { font: .74em Verdana, Arial, "Trebuchet MS", Tahoma, sans-serif; line-height: 1.6em; background: #CCCCFF; color: #444; }
+
+a {	color: #003399;	background: inherit; text-decoration: none; }
+a:hover { color: #808080; background: inherit; }
+p { margin: 0 0 15px 0; }
+h1 { font: normal 3.7em "Trebuchet MS", Arial, Sans-Serif; color: #fff; }
+h1 a { color: #fff; background: inherit; }
+h1 a:hover { color: #E4FFD3; background: inherit; }
+sup { font-size: .3em; color: #DFCDA2; }
+h2 { color: #003399; font: bold 1.6em "Trebuchet MS", Arial, Sans-Serif; margin: 0 0 12px; border-bottom: 1px solid #ccc; }
+h3 { color: #003399;  padding: 3px 2px; margin: 0 0 1px; }
+
+#content { width: 960px; margin: 10px auto; background: #fff; padding: 10px; }
+
+#header { background: #fff url(../images/header.jpg) no-repeat; height: 141px; }
+	#header p { margin: 30px 0 0; color: #D6E5EA; }
+	#logo { padding: 40px 0 0 20px;  float: left; width: 400px; }
+	
+	#menu { margin: 0 0 50px; }
+		#menu li { list-style: none; float: left; }
+		#menu li a { cursor: pointer; padding: 5px 74px; line-height: 25px; background: #6699FF; margin: 0 1px 0 0; color: #FFFFFF; }
+		#menu li a:hover { background: #3366CC; color: #000; }
+		#menu li a.current { background: #66A3CF; color: #fff; }
+		#menu li a#last  { margin: 0px 0px 0px 0px; padding: 5px 60px 5px 62px; }
+.first { text-align:left;overflow:hidden; font-size: .9em;  float: left; width: 340px;height:400px; margin: 0 30px 10px 10px; }
+.second { position:relative;top: -400px;text-align:left;font-size: .9em;  float:right; width: 570px;height:0px; margin: 0 10px 10px 10px;border-top-style:solid;border-top-width:thin; }
+.third { position:relative;top: -200px;text-align:left;font-size: .9em;  float:right; width: 570px;height:0px; margin: 0 10px 10px 10px;border-top-style:solid;border-top-width:thin; }
+.last {  text-align:left;float: right;margin: 10px 10px 0 0; }
+.mast { font-size:12px; }
+
+.more { border-top: 1px solid #eee; padding: 5px 0 0 0; }
+
+#prefooter { text-align:left;width: 944px; margin: 0 auto; background: #fff; padding: 15px 18px 1px; font-size: .9em;  }
+
+#footer { width: 960px; margin: 15px auto; color: #808080; font-size: .9em; }
+	#footer a { color: #444; }
+	.right { float: right; text-align: right; font-size: 1em; }
+		#footer .right a { margin: 0 0 0 2px; padding: 3px 10px; }
+		#footer .right a:hover { background: #fff; color: #444; text-decoration: underline; }

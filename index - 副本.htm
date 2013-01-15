@@ -1,0 +1,115 @@
+﻿
+<head>
+	<title>华北电力大学（保定）后勤管理处</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<script language="JavaScript">
+　　var i = 1;
+　　banner1= new Image();
+　　banner1.src = "images\\1.jpg";
+　　banner2 = new Image();
+　　banner2.src = "images\\2.jpg";
+　　banner3 = new Image();
+　　banner3.src = "images\\3.jpg";
+　　banner4 = new Image();
+　　banner4.src = "images\\4.jpg";
+　　function startTime(){
+　　var time= new Date();
+　　hours= time.getHours();
+　　mins= time.getMinutes();
+　　secs= time.getSeconds();
+　　closeTime=hours*3600+mins*60+secs;
+　　closeTime+=3;
+　　Timer();
+　　}
+　　function Timer(){
+　　var time= new Date();
+　　hours= time.getHours();
+　　mins= time.getMinutes();
+　　secs= time.getSeconds();
+　　curTime=hours*3600+mins*60+secs
+　　if (curTime>=closeTime){
+　　if (i<4){ // 图形总数
+　　i++;
+　　document.banner.src = eval("banner"+i+".src");
+　　}
+　　else {
+　　i = 1;
+　　document.banner.src = eval("banner"+i+".src");
+　　}
+　　startTime();
+　　}
+　　else{
+　　window.setTimeout("Timer()",1000)}
+　　}
+　　</script>
+</head>
+<body style="text-align:center" onLoad=" startTime();">
+	<div id="content">
+		<img src=images/header2.jpg>
+		<ul id="menu">
+			<li><a href="#">首页</a></li>
+			<li><a href="department.htm">部门概况</a></li>
+			<li><a href="rules.htm">规章制度</a></li>
+			<li><a href="serve.htm">服务指南</a></li>
+			<li><a id="last" href="#">信箱</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+		<div class="first">
+			<h3>校园风景</h3>
+		<p>
+<img src="images\2.jpg" border=0 name="banner">
+</p>
+		</div>
+		<div class="second">
+            	<h2>工作动态</h2>
+           	<div>
+          	<ul>
+			
+			    <li><a>id</a></li>
+			
+			</ul>
+			</div>
+			<p class="more"><a href="#">更多</a></p>
+		</div>
+<div style="clear: both;"></div>
+		<div class="third last">
+			<h2>通知公告</h2>
+			<div>
+			 <ul>
+		      
+			  <li><a>id</a></li>
+			   
+		  </ul>
+		  </div>
+			<p class="more"><a href="#">更多</a></p>
+		</div>
+		
+<div style="clear: both;"></div>
+</div>	
+<div id="prefooter">
+		<p>
+<select class="input" onChange="if(this.value!='')window.open(this.value);this.options[0].selected=true" size="1">
+<option value="" selected>友 情 链 接</option>
+<option value=http://www.21caas.com/>中国院校后勤信息网</option>
+<option value=http://news.hbcf.edu.cn/hqc/>河北金融学院后勤处</option>
+<option value=http://202.206.96.204/hqjt/list.asp?id=246>河北师范大学后勤集团</option>
+<option value=http://hqjt.hbu.edu.cn/>河北大学后勤集团</option>
+<option value=http://houqin.hebut.edu.cn/>河北工业大学后勤处</option>
+<option value=http://hqc.depart.hebust.edu.cn/>河北科技大学总务处</option>
+<option value=http://hqjt.depart.hebust.edu.cn/web/index.asp>河北科技大学后勤集团</option>
+<option value=http://202.206.48.73/houj/default.asp>河北医科大学后勤处</option>
+<option value=http://houqin.heuu.edu.cn/UI/Default.aspx>河北联合大学后勤集团</option>
+<option value=http://hqc.stdu.edu.cn/>石家庄铁道学院后勤管理处</option>
+<option value=http://www.jiayuanchina.com/houqin/>河北工程大学后勤集团</option>
+<option value=http://www.neu.edu.cn/houqin/>东北大学后勤服务中心</option>
+<option value=http://hqjt.xidian.edu.cn/>西安电子科技大学后勤服务集团</option>
+<option value=http://www2.cqjtu.edu.cn/hq/>重庆交通大学后勤服务总公司</option>
+</select>
+</p>
+	</div>
+	<div id="footer">
+		<p>© Copyright 2012, <a href="#">华北电力大学（保定）后勤管理处</a>, Design:RainFly, <a title="华北电力大学" href="http://202.206.208.65/">华北电力大学</a></p>
+	</div>
+</body>
+</html>

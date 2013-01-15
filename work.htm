@@ -1,0 +1,59 @@
+﻿<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>工作动态</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="text-align:center">
+<div id="content">
+		<img src=images/header.jpg>
+		<ul id="menu">
+			<li><a href="index.htm">首页</a></li>
+			<li><a href="department.htm">部门概况</a></li>
+			<li><a href="rules.htm">规章制度</a></li>
+			<li><a href="serve.htm">服务指南</a></li>
+			<li><a id="last" href="#">信箱</a></li>
+		</ul>
+
+
+<div align="left">
+     <php> {section name=l loop=$sm_list}
+     <div class="listtt">
+      <h2><a href="list.php?cid={$sm_list[l].cid}">{$sm_list[l].cidname}</a></h2>
+      <span><a href="view.php?id={$sm_list[l].id}">{$sm_list[l].title}</a></span>
+      <div id="more">{$sm_list[l].date_time}</div>
+    </div>
+    {/section}
+
+</div>
+		
+{$pagenav}        
+        
+        <div style="clear: both;"></div>
+</div>
+<div id="prefooter">
+		<p>
+<select class="input" onChange="if(this.value!='')window.open(this.value);this.options[0].selected=true" size="1">
+<option value="" selected>友 情 链 接</option>
+<option value=http://www.21caas.com/>中国院校后勤信息网</option>
+<option value=http://news.hbcf.edu.cn/hqc/>河北金融学院后勤处</option>
+<option value=http://202.206.96.204/hqjt/list.asp?id=246>河北师范大学后勤集团</option>
+<option value=http://hqjt.hbu.edu.cn/>河北大学后勤集团</option>
+<option value=http://houqin.hebut.edu.cn/>河北工业大学后勤处</option>
+<option value=http://hqc.depart.hebust.edu.cn/>河北科技大学总务处</option>
+<option value=http://hqjt.depart.hebust.edu.cn/web/index.asp>河北科技大学后勤集团</option>
+<option value=http://202.206.48.73/houj/default.asp>河北医科大学后勤处</option>
+<option value=http://houqin.heuu.edu.cn/UI/Default.aspx>河北联合大学后勤集团</option>
+<option value=http://hqc.stdu.edu.cn/>石家庄铁道学院后勤管理处</option>
+<option value=http://www.jiayuanchina.com/houqin/>河北工程大学后勤集团</option>
+<option value=http://www.neu.edu.cn/houqin/>东北大学后勤服务中心</option>
+<option value=http://hqjt.xidian.edu.cn/>西安电子科技大学后勤服务集团</option>
+<option value=http://www2.cqjtu.edu.cn/hq/>重庆交通大学后勤服务总公司</option>
+</select>
+</p>
+	</div>
+	<div id="footer">
+		<p>© Copyright 2012, <a href="#">华北电力大学后勤管理处</a>, Design:梁泽辉, <a title="华北电力大学" href="http://202.206.208.65/">华北电力大学</a></p>
+	</div>
+</body>
+</html>
